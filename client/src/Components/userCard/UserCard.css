@@ -1,0 +1,16 @@
+.user-card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin: 10px;
+    background-color: rgb(13, 108, 146);  
+    border-radius: 10px;
+    align-items: center;
+}
+.info {
+    text-align: left;
+    border: 5px solid rgb(6, 68, 92);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}

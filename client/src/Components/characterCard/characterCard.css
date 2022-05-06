@@ -1,0 +1,29 @@
+.gg_char {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin: 10px;
+    background-color: rgb(180, 2, 2);  
+    border-radius: 10px;
+}
+.gg_char:hover {
+    background-color: rgb(255, 98, 98);
+    transform: scale(1.03);
+}
+
+.char-icon {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    border: 10px solid rgb(99, 14, 14);
+}
+
+.char-title {
+    color: white;
+    margin: 10px;
+    align-self: center;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(99, 14, 14);  
+}
