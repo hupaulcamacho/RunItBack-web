@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import UserCard from '../userCard/UserCard';
 import './UsersList.css'
 
 const UsersList = () => {
-    const [ users, setUsers ] = React.useState([]);
+    const [ users, setUsers ] = useState([]);
 
-    React.useEffect(() => {
+    useEffect(() => {
         let url = "http://localhost:3333/users";
         fetch(url)
         .then(response => response.json())
