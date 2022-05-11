@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
+// components
+import UserCard from '../userCard/UserCard';
 
 function UserDetails() {
     let params = useParams();
@@ -14,7 +16,6 @@ function UserDetails() {
         fetch(url)
         .then(response => response.json())
         .then(data => {
-            console.log(data.payload)
             setUserData(data.payload)
         })
     }, []);
@@ -22,6 +23,7 @@ function UserDetails() {
     return (
         <div>
             <h1>UserDetails</h1>
+            <UserCard user={userData} />
         </div>
     )
 }
