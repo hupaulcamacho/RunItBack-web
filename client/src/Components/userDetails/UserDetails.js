@@ -24,6 +24,10 @@ function UserDetails() {
         <div>
             <h1>UserDetails</h1>
             <UserCard user={userData} />
+            <div className='user-settings'>
+                <h2>Profile Settings</h2>
+                <p>Change details for this users account</p>
+            </div>
         </div>
     )
 }

@@ -5,7 +5,7 @@ import './UserCard.css';
 
 function UserCard({ user }) {
     return (
-        <Link to={`/users/${user?.id}`}> 
+        <Link to={`/users/${user?.id}`} className='user-card-links'> 
             <div className='user-card'>
                 <h2>{user?.username}</h2>
                 <div className='info'>
