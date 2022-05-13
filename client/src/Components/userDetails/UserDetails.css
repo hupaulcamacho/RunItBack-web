@@ -1,0 +1,51 @@
+.userForm {
+    border: 2px solid #536383;;
+    width: 50%;
+    margin: auto;
+    /* padding: 10px; */
+    border-radius: 5px;
+}
+
+.userForm__inputContainer {
+    display: grid;
+    background-color: #354055;
+    grid-template-columns: 1fr 75%;
+    text-align: left;
+    padding: 20px;
+    border-bottom: 2px solid #536383;
+}
+
+.userForm__input {
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 2px solid #536383;
+    background-color: #536383;
+    /* box-sizing: border-box; */
+}
+.userForm__input:focus {
+    outline: none;
+    border: 2px solid rgb(20, 158, 212)
+}
+
+.userForm__inputLabel {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.saveChanges__button {
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    background-color: #498a67;
+    border-radius: 5px;
+    justify-content: left;
+}
+.saveChanges__button:hover {
+    background-color: #63b88b;  
+}
+/* .label {
+    text-size
+} */
