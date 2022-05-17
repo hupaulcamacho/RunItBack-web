@@ -6,8 +6,8 @@ const UsersList = () => {
     const [ users, setUsers ] = useState([]);
 
     useEffect(() => {
-        // let url = "https://runitback-api.herokuapp.com/users";
-        let url = 'http://localhost:3333/users/';
+        let url = "https://runitback-api.herokuapp.com/users";
+        // let url = 'http://localhost:3333/users/';
 
         fetch(url)
         .then(response => response.json())
