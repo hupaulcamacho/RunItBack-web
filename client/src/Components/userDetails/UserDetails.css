@@ -22,7 +22,6 @@
     font-size: 16px;
     border: 2px solid #536383;
     background-color: #536383;
-    /* box-sizing: border-box; */
 }
 .userForm__input:focus {
     outline: none;

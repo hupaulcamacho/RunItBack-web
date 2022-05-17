@@ -22,13 +22,40 @@ function UserDetails() {
 
 
     useEffect(() => {
-        let url = `https://runitback-api.herokuapp.com/users/${userId}`
+        // let url = `https://runitback-api.herokuapp.com/users/${userId}`;
+        let url = `http://localhost:3333/users/${userId}`;
+
         fetch(url)
         .then(response => response.json())
         .then(data => {
             setUserData(data.payload)
         })
     }, []);
+
+    const updateStudent = () => {
+        // prepare request body
+        let requestOptions = {
+            method: 'Put',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({username, email, region, controller})
+        }
+        let url = `http://localhost:3333/users/${userId}`
+        // let url = 'https://runitback-api.herokuapp.com/users/new'
+
+        // post request with fetch
+        fetch(url, requestOptions)
+        .then(response => response.json())
+        .then(data => {
+            setUsername('')
+            setEmail('')
+            setRegion('')
+            setController('')
+        }).catch(err => {
+            // let user know of error
+        })
+    }
 
     return (
         <div>
@@ -40,24 +67,44 @@ function UserDetails() {
                 <div className='userForm'>
                     <div className='userForm__inputContainer'>
                         <label className='userForm__inputLabel'>Username</label>
-                        <input value='username' className='userForm__input' placeholder={userData?.username}/>
+                        <input 
+                            value={username} 
+                            className='userForm__input' 
+                            placeholder={userData?.username}
+                            onChange={(e) => setUsername(e.target.value)}
+                        />
                     </div>
 
                     <div className='userForm__inputContainer'>
                         <label className='userForm__inputLabel'>Email</label>
-                        <input value='email' className='userForm__input' placeholder={userData?.email}/>
+                        <input 
+                            value={email} 
+                            className='userForm__input' 
+                            placeholder={userData?.email}
+                            onChange={(e) => setEmail(e.target.value)}                            
+                        />
                     </div>
 
                     <div className='userForm__inputContainer'>
                         <label className='userForm__inputLabel'>Region</label>
-                        <input value='region' className='userForm__input' placeholder={userData?.region}/>
+                        <input 
+                            value={region} 
+                            className='userForm__input' 
+                            placeholder={userData?.region}
+                            onChange={(e) => setRegion(e.target.value)}
+                        />
                     </div>
 
                     <div className='userForm__inputContainer'>
                         <label className='userForm__inputLabel'>Controller</label>
-                        <input value='controller'className='userForm__input' placeholder={userData?.controller}/>
+                        <input 
+                            value={controller} 
+                            className='userForm__input' 
+                            placeholder={userData?.controller}
+                            onChange={(e) => setController(e.target.value)}
+                        />
                     </div>
-                    <div className='saveChanges__button'>
+                    <div className='saveChanges__button' onClick={() => updateStudent()}>
                         Save Changes
                     </div>
                 </div>
