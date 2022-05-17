@@ -31,6 +31,7 @@
 .userForm__inputLabel {
     font-size: 16px;
     font-weight: bold;
+    align-self: center;
 }
 
 .saveChanges__button {
@@ -44,6 +45,7 @@
 }
 .saveChanges__button:hover {
     background-color: #63b88b;  
+    cursor: pointer;
 }
 /* .label {
     text-size

@@ -16,6 +16,15 @@
 .user-card:hover {
     background-color:rgb(20, 158, 212)
 }
+.user-avatar {
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 5px solid rgb(6, 68, 92);
+}
+.user-title {
+    font-size: 24px;
+}
 
 .info {
     text-align: left;
@@ -23,4 +32,8 @@
     border-radius: 10px;
     padding: 5px;
     margin: 5px;
+}
+.info-label {
+    font-weight: bold;
+    color: rgb(6, 68, 92);
 }

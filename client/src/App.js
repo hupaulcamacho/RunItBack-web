@@ -8,6 +8,7 @@ import GGSTCharacters from "./Components/ggstCharacters/ggstCharacters";
 import UsersList from "./Components/usersList/UsersList";
 import UserDetails from "./Components/userDetails/UserDetails";
 import NavBar from './Components/navbar/NavBar';
+import LandingPage from './Components/LandingPage/LandingPage';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path='/' element={<GGSTCharacters />}/>
+          <Route path='/' element={<LandingPage />} />
+          {/* <Route path='/characters' element={<GGSTCharacters />}/> */}
           <Route path='/users/:id' element={<UserDetails />}/>
           <Route path='/users' element={<UsersList />}/>
         </Routes>

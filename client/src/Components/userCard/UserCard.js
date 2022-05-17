@@ -7,11 +7,25 @@ function UserCard({ user }) {
     return (
         <Link to={`/users/${user?.id}`} className='user-card-links'> 
             <div className='user-card'>
-                <h2>{user?.username}</h2>
-                <div className='info'>
-                    <div>Region: {user?.region}</div>
-                    <div>Controller: {user?.controller}</div>
-                    <div>Email: {user?.email}</div>
+                <img className='user-avatar' src='https://www.w3schools.com/w3images/avatar2.png'/>
+                <div>
+                    <h2 className='user-title'>{user?.username}</h2>
+                    <div className='info'>
+                        <div>
+                            <span className='info-label'>Email: </span>
+                            {user?.email}
+                        </div>
+
+                        <div>
+                            <span className='info-label'>Controller: </span> 
+                            {user?.controller}
+                        </div>
+
+                        <div>
+                            <span className='info-label'>Region: </span> 
+                            {user?.region}
+                        </div>
+                    </div>
                 </div>
             </div>
         </Link>
