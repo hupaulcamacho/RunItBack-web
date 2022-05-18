@@ -2,7 +2,7 @@
     position: absolute;
     background: #536383;
     width: 100%;
-    padding: 15px;
+    padding: 15px 0;
     z-index: 2;
 }
 .nav-links {
