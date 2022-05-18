@@ -1,3 +1,6 @@
+.user-details-main {
+    padding-top: 50px;
+}
 .userForm {
     border: 2px solid #536383;;
     width: 50%;
@@ -50,3 +53,12 @@
 /* .label {
     text-size
 } */
+
+@media only screen and (max-width: 440px) {
+    .userForm {
+        width: 93%
+    }
+    .saveChanges__button {
+        width: 40%;
+    }
+}

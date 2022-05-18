@@ -22,8 +22,8 @@ function UserDetails() {
 
 
     useEffect(() => {
-        let url = `https://runitback-api.herokuapp.com/users/${userId}`;
-        // let url = `http://localhost:3333/users/${userId}`;
+        // let url = `https://runitback-api.herokuapp.com/users/${userId}`;
+        let url = `http://localhost:3333/users/${userId}`;
 
         fetch(url)
         .then(response => response.json())
@@ -41,8 +41,8 @@ function UserDetails() {
             },
             body: JSON.stringify({username, email, region, controller})
         }
-        // let url = `http://localhost:3333/users/${userId}`
-        let url = `https://runitback-api.herokuapp.com/users/${userId}`
+        let url = `http://localhost:3333/users/${userId}`
+        // let url = `https://runitback-api.herokuapp.com/users/${userId}`
 
 
         // post request with fetch
@@ -53,18 +53,19 @@ function UserDetails() {
             setEmail('')
             setRegion('')
             setController('')
+            setUserData(data.updatedUser)
         }).catch(err => {
             // let user know of error
         })
     }
 
     return (
-        <div>
+        <div className="user-details-main">
             {/* <h1>UserDetails</h1> */}
             <UserCard user={userData} />
             <div className='user-settings'>
                 <h2>Profile Settings</h2>
-                <p>Change identifying details for this user's account</p>
+                {/* <p>Change identifying details for this user's account</p> */}
                 <div className='userForm'>
                     <div className='userForm__inputContainer'>
                         <label className='userForm__inputLabel'>Username</label>

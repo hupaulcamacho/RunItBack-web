@@ -1,6 +1,9 @@
 .main-nav {
-  background: #536383;
-  padding: 15px;
+    position: absolute;
+    background: #536383;
+    width: 100%;
+    padding: 15px;
+    z-index: 2;
 }
 .nav-links {
     color: white;
