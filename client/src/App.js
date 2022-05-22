@@ -7,6 +7,10 @@ import GGSTCharacters from "./Components/ggstCharacters/ggstCharacters";
 
 import UsersList from "./Components/usersList/UsersList";
 import UserDetails from "./Components/userDetails/UserDetails";
+
+import EventsList from "./Components/eventsList/EventsList";
+import EventDetails from "./Components/eventDetails/eventDetails";
+
 import NavBar from './Components/navbar/NavBar';
 import LandingPage from './Components/LandingPage/LandingPage';
 
@@ -18,8 +22,10 @@ function App() {
         <Routes>
           <Route path='/' element={<LandingPage />} />
           {/* <Route path='/characters' element={<GGSTCharacters />}/> */}
-          <Route path='/users/:id' element={<UserDetails />}/>
-          <Route path='/users' element={<UsersList />}/>
+          <Route path='/users/:id' element={<UserDetails />} />
+          <Route path='/users' element={<UsersList />} />
+          <Route path='/events' element={<EventsList />} />
+          <Route path='/events/:id' element={<EventDetails />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -6,9 +6,9 @@ const LandingPage = () => {
     return (
         <div className='landing-main'>\
             <div className='landing-info'>
-                <h1 className='landing-title'>RunItBack</h1>
+                <h1 className='landing-title'>Run It Back</h1>
                 <div className='landing-blurb'>
-                    Create your own professional esports profile!
+                    Create your own professional fgc esports profile and compete in tournaments!!
                 </div>
             </div>
             <div>video</div>

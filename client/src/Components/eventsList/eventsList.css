@@ -1,0 +1,12 @@
+.eventsList {
+    padding-top: 50px;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 440px) {
+    .eventsList{
+        width:90%;
+    }
+}

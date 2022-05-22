@@ -61,11 +61,9 @@ function UserDetails() {
 
     return (
         <div className="user-details-main">
-            {/* <h1>UserDetails</h1> */}
             <UserCard user={userData} />
             <div className='user-settings'>
                 <h2>Profile Settings</h2>
-                {/* <p>Change identifying details for this user's account</p> */}
                 <div className='userForm'>
                     <div className='userForm__inputContainer'>
                         <label className='userForm__inputLabel'>Username</label>
@@ -83,7 +81,7 @@ function UserDetails() {
                             value={email} 
                             className='userForm__input' 
                             placeholder={userData?.email}
-                            onChange={(e) => setEmail(e.target.value)}                            
+                            onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
 
