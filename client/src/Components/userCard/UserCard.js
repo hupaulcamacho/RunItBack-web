@@ -6,7 +6,7 @@ import './UserCard.css';
 function UserCard({ user }) {
     return (
         <Link to={`/users/${user?.id}`} className='user-card-links'> 
-            <div className='user-card'>
+            <div className='user-card' key={user?.id}>
                 <img className='user-avatar' src='https://www.w3schools.com/w3images/avatar2.png'/>
                 <div>
                     <h2 className='user-title'>{user?.username}</h2>

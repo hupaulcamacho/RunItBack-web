@@ -25,7 +25,6 @@ function EventDetails() {
         fetch(url)
         .then(response => response.json())
         .then(data => {
-            console.log(data.payload)
             setEventData(data.payload)
         });
     }
@@ -35,7 +34,6 @@ function EventDetails() {
         fetch(url)
         .then(response => response.json())
         .then(data => {
-            console.log(data.payload)
             setTournaments(data.payload)
         });
     }
