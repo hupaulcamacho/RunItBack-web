@@ -22,8 +22,8 @@ function UserDetails() {
 
 
     useEffect(() => {
-        // let url = `https://runitback-api.herokuapp.com/users/${userId}`;
-        let url = `http://localhost:3333/users/${userId}`;
+        let url = `https://runitback-api.herokuapp.com/users/${userId}`;
+        // let url = `http://localhost:3333/users/${userId}`;
 
         fetch(url)
         .then(response => response.json())
@@ -41,8 +41,8 @@ function UserDetails() {
             },
             body: JSON.stringify({username, email, region, controller})
         }
-        let url = `http://localhost:3333/users/${userId}`
-        // let url = `https://runitback-api.herokuapp.com/users/${userId}`
+        // let url = `http://localhost:3333/users/${userId}`
+        let url = `https://runitback-api.herokuapp.com/users/${userId}`
 
 
         // post request with fetch
