@@ -13,8 +13,17 @@
     text-decoration: none;
 }
 
+.event-card-img {
+    width: 500px;
+}
 .event-title {
     display: flex;
     text-align: left;
     font-size: 24px;
+}
+
+@media only screen and (max-width: 440px) {
+    .event-card-img {
+        width: 250px;
+    }
 }

@@ -6,7 +6,7 @@ function EventsList() {
     const [ events, setEvents ] = React.useState([]);
 
     React.useEffect(() => {
-        let url = 'http://localhost:3333/events';
+        let url = 'https://runitback-api.herokuapp.com/events';
 
         fetch(url)
         .then(response => response.json())

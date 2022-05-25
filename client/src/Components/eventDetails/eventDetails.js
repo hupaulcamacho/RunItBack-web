@@ -20,7 +20,9 @@ function EventDetails() {
     }, [])
 
     function getEventData() {
-        let url = `http://localhost:3333/events/${eventId}`;
+        // let url = `http://localhost:3333/events/${eventId}`;
+        let url = `https://runitback-api.herokuapp.com/events/${eventId}`;
+
 
         fetch(url)
         .then(response => response.json())
@@ -30,7 +32,9 @@ function EventDetails() {
     }
 
     function getTournaments() {
-        let url = `http://localhost:3333/events/${eventId}/tournaments`;
+        // let url = `http://localhost:3333/events/${eventId}/tournaments`;
+        let url = `https://runitback-api.herokuapp.com/events/${eventId}/tournaments`;
+
         fetch(url)
         .then(response => response.json())
         .then(data => {
