@@ -1,3 +1,9 @@
+.user-card-container {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(9, 85, 114);      
+}
 .user-card {
     display: flex;
     flex-wrap: wrap;
@@ -8,6 +14,9 @@
     align-items: center;
 }
 
+.user-card-inner {
+    justify-content: start;
+}
 .user-card-links {
     color: white;
     text-decoration: none;
@@ -23,7 +32,12 @@
     border: 5px solid rgb(6, 68, 92);
 }
 .user-title {
-    font-size: 24px;
+    width: fit-content;
+    font-size: 25px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgb(9, 85, 114);    
 }
 
 .info {
@@ -36,4 +50,17 @@
 .info-label {
     font-weight: bold;
     color: rgb(6, 68, 92);
+}
+
+.delete-button {
+    background-color: rgb(191, 6, 6);
+    margin-left: auto; 
+    margin-right: 0;
+    width: 40%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.delete-button:hover {
+    background-color: rgb(210, 44, 44);
 }

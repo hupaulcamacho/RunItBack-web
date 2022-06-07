@@ -7,6 +7,7 @@ import GGSTCharacters from "./Components/ggstCharacters/ggstCharacters";
 
 import UsersList from "./Components/usersList/UsersList";
 import UserDetails from "./Components/userDetails/UserDetails";
+import NewUserForm from './Components/newUserForm/newUserForm';
 
 import EventsList from "./Components/eventsList/EventsList";
 import EventDetails from "./Components/eventDetails/eventDetails";
@@ -24,6 +25,7 @@ function App() {
           {/* <Route path='/characters' element={<GGSTCharacters />}/> */}
           <Route path='/users/:id' element={<UserDetails />} />
           <Route path='/users' element={<UsersList />} />
+          <Route path='/users/new' element={<NewUserForm />} />
           <Route path='/events' element={<EventsList />} />
           <Route path='/events/:id' element={<EventDetails />} />
         </Routes>

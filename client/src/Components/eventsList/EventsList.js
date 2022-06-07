@@ -1,6 +1,7 @@
 import React from 'react'
 import EventCard from '../eventCard/eventCard';
 import './eventsList.css'
+import { Link } from 'react-router-dom';
 
 function EventsList() {
     const [ events, setEvents ] = React.useState([]);
@@ -17,6 +18,11 @@ function EventsList() {
     return (
         <div className ='eventsList'>
             <h1>Events</h1>
+            <Link to='/users/new'>
+                <div className='add-user    '>
+                    Add New Event
+                </div>
+            </Link>
             {events.map((event) => {
                 return (
                     <EventCard event={event} />

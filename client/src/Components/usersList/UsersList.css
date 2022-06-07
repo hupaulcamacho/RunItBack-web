@@ -5,6 +5,21 @@
     margin: auto;
 }
 
+.add-user {
+    background-color: rgb(38, 160, 42);
+    width: 100px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px;
+}
+.add-user:hover  {
+    background-color: rgb(46, 199, 51);
+}
+.add-user-link {
+    color: white;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 440px) {
     .userList{
         width:90%;

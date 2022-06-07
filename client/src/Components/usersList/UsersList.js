@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import UserCard from '../userCard/UserCard';
 import './UsersList.css'
+import { Link } from 'react-router-dom';
 
 const UsersList = () => {
     const [ users, setUsers ] = useState([]);
@@ -19,6 +20,11 @@ const UsersList = () => {
     return (
         <div className='userList'>
             <h1>Users</h1>
+            <Link to='/users/new' className='add-user-link'>
+                <div className='add-user'>
+                    Add New User
+                </div>
+            </Link>
             {users.map((user) => {
                 return (
                     <UserCard user={user} />
