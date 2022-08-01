@@ -40,7 +40,7 @@ function NewUserForm() {
     return (
         <div className='new-user-form'>
             <h1>Add New User</h1>
-            <div className='userForm'>
+                <div className='userForm'>
                     <div className='userForm__inputContainer'>
                         <label className='userForm__inputLabel'>Username</label>
                         <input 
